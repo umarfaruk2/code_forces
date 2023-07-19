@@ -13,12 +13,15 @@ int main() {
     for(int i = 0; i < n; i++) {
         int x;
         cin >> x;
+        
         string s;
         cin >> s;
 
         for(int i = 0; i < s.length(); i++) {
             if(s[i] < 97) {
                 s[i] += 32;
+                int file_name = 50;
+                cout << file_name << "\n";
             }
         }
         int index = 0;
@@ -31,6 +34,7 @@ int main() {
             } else if(s[i] == main_string[index+1] && index+1 != 5 && isVisit != 0) {
                 index++;
                 check_index = index;
+
             } else {
                 check_index = 0;
                 break;

@@ -13,8 +13,6 @@ int main() {
     for(int i = 0; i < n; i++) {
         ll x;
         cin >> x;
-        
-             
     }
     
     return 0;
